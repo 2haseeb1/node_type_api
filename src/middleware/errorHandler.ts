@@ -11,7 +11,7 @@ export const errorHandler = (
   res: Response,
   _next: NextFunction
 ): void => {
-  void _next; // Properly acknowledge that _next is unused
+  void _next; 
   
   const statusCode = err.statusCode || 500; 
   const message = err.message || 'Internal Server Error';

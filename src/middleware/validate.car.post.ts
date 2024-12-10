@@ -14,7 +14,7 @@ interface ValidationError {
   value: unknown;
 }
 
-export const validateCarInput = (req: Request, res: Response, next: NextFunction): void => {
+export const validateCarPostInput = (req: Request, res: Response, next: NextFunction): void => {
   const errors: Record<string, ValidationError> = {}; 
 
   const { brand, model, year, price, category, description, quantity, inStock } = req.body;

@@ -13,7 +13,7 @@ const startServer = async (): Promise<void> => {
     const PORT = config.port || 5000;
     app.listen(PORT, () => {
       // eslint-disable-next-line no-console
-      console.log(`Server running on port ${PORT} 🚀`);
+      console.log(`Server running on port http://localhost:${PORT} 🚀`);
     });
   } catch (error) {
     // eslint-disable-next-line no-console

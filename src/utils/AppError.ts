@@ -1,7 +1,7 @@
 class AppError extends Error {
     public statusCode: number;
     public isOperational: boolean;
-    public status: string;  // New status property
+    public status: string;  
     public stackTrace?: string;
   
     constructor(message: string, statusCode: number, error?: Error) {
